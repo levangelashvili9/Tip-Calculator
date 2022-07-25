@@ -27,4 +27,4 @@ Tip Calculator calculates the amount of tip per person and total bill per person
 
 ## Author:
 
-Linkedin: [linkedin](https://www.linkedin.com/in/levan-gelashvili-669327227/)
+[Linkedin:](https://www.linkedin.com/in/levan-gelashvili-669327227/)
