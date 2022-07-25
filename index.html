@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="images/SPLITTER.svg" alt="splitter logo" />
+    </div>
+    <div class="container">
+      <div class="inputs">
+        <div class="bill">
+          <label class="input-heading" for="bill-input">Bill</label>
+          <div class="input">
+            <input
+              class="input-field dollar-icon"
+              type="number"
+              id="bill-input"
+              name="bill"
+              placeholder="0"
+            />
+          </div>
+        </div>
+        <div class="tip">
+          <h3 class="tip-cells-heading">Select Tip %</h3>
+          <div class="cells">
+            <div class="cell">5%</div>
+            <div class="cell">10%</div>
+            <div class="cell">15%</div>
+            <div class="cell">25%</div>
+            <div class="cell">50%</div>
+            <div class="">
+              <input
+                class="custom"
+                type="number"
+                id="custom"
+                name="custom"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="people">
+          <label class="input-heading" for="bill-input">Number of People</label>
+          <span class="error-msg">must be at least 1</span>
+          <div class="input">
+            <input
+              class="input-field person-icon"
+              type="number"
+              id="people-input"
+              name="people"
+              placeholder="0"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="results">
+        <div class="results-inner">
+          <div class="results-items">
+            <div class="results-item">
+              <div class="tip-amount">
+                <h3 class="results-heading">Tip Amount</h3>
+                <p class="results-text">/ person</p>
+              </div>
+              <div class="result" id="tip-value">0.00</div>
+            </div>
+            <div class="results-item">
+              <div class="total-amount">
+                <h3 class="results-heading">Total</h3>
+                <p class="results-text">/ person</p>
+              </div>
+              <div class="result" id="total-value">0.00</div>
+            </div>
+          </div>
+          <div class="reset">
+            <button class="reset-button">RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

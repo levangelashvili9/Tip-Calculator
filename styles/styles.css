@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Space Mono", monospace;
+  font-size: 62.5%;
+}
+
+body {
+  font-weight: 700;
+  background: #d9d9d9;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0 4rem;
+}
+
+.container {
+  max-width: 37.5rem;
+  margin: 0 auto;
+  padding-bottom: 3.2rem;
+
+  background: #ffffff;
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+  border-radius: 25px 25px 0px 0px;
+}
+
+/******************* GENERAL / REUSABLE *******************/
+
+.input-heading {
+  display: block;
+
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #5e7a7d;
+
+  margin-bottom: 0.8rem;
+}
+
+.input {
+  position: relative;
+}
+
+.input-field {
+  background: #f3f9fa;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  height: 4.8rem;
+
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  font-weight: 700;
+  text-align: right;
+
+  color: #00474b;
+
+  padding: 0.3rem 1.8rem;
+
+  font-family: "Space Mono", monospace;
+}
+
+/* remove arrows (steps) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/******************* INPUTS *******************/
+
+.inputs {
+  padding: 3.2rem;
+}
+
+.bill {
+  margin-bottom: 3.2rem;
+}
+
+.dollar-icon {
+  background-image: url(../images/dollar.svg);
+  background-repeat: no-repeat;
+  background-position: 1.8rem center;
+}
+
+.tip-cells-heading {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #5e7a7d;
+  margin-bottom: 1.6rem;
+}
+
+.cells {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.cell {
+  background: #00474b;
+  border-radius: 5px;
+  padding: 0.6rem 1.7rem;
+  height: 4.8rem;
+
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  text-align: center;
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+.cell:hover {
+  background: #9fe8df;
+  color: #00474b;
+}
+
+.custom {
+  width: 100%;
+  height: 4.8rem;
+  background: #f3f9fa;
+  border: none;
+
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  text-align: center;
+  color: #547878;
+}
+
+.people {
+  position: relative;
+}
+
+.person-icon {
+  background-image: url(../images/people.svg);
+  background-repeat: no-repeat;
+  background-position: 1.8rem center;
+}
+
+/******************* RESULTS *******************/
+
+.results-inner {
+  margin: 0 2.4rem;
+  padding: 3.4rem 2.3rem;
+  background: #00474b;
+  border-radius: 15px;
+}
+
+.results-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.results-heading {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #ffffff;
+}
+
+.results-text {
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+  color: #7f9d9f;
+}
+
+.result {
+  font-size: 3.2rem;
+  line-height: 4.7rem;
+  text-align: right;
+  letter-spacing: -0.666667px;
+  color: #26c2ae;
+}
+
+.reset-button {
+  padding: 0.9rem 3.2rem;
+
+  background: #0d686d;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 700;
+  text-align: center;
+
+  color: #00474b;
+
+  mix-blend-mode: normal;
+  opacity: 0.35;
+}
+
+.reset-button:hover {
+  background: #9fe8df;
+  cursor: pointer;
+}
+
+/******************* DOM MANIPULATOIN *******************/
+
+.active-cell {
+  background: #26c2ae;
+  color: #00474b;
+}
+
+.error-msg {
+  position: absolute;
+  top: 0.6rem;
+  right: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: red;
+  display: none;
+  transition: all 0.3s;
+}
+
+.error-msg-displayed {
+  display: block;
+}
+
+.active-reset-btn {
+  background: #26c2ae;
+}
